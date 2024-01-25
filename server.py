@@ -4,7 +4,7 @@ import sys
 # Adds an entry of domain to ip to the file
 def add_entry(file_name, domain, ip):
     with open(file_name, 'a') as file:
-        file.write(domain + "," + ip)
+        file.write("\n" + domain + "," + ip)
 
 def main():
     if len(sys.argv) != 5:
